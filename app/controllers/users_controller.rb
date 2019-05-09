@@ -1,5 +1,3 @@
-require 'rack-flash'
- # require 'flash'
 class UsersController < ApplicationController
 
     get '/users/:slug' do
@@ -13,7 +11,6 @@ class UsersController < ApplicationController
         redirect '/tweets'
       else
         erb :'users/create_user'
-        # flash[:message] = "Welcome to Fwitter!"
       end
     end
 
